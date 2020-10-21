@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>datadriven1</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>be10a248-0fc6-4468-9cc8-e9b0627b06ed</testSuiteGuid>
+   <testCaseLink>
+      <guid>fe11c4d6-2bb8-4b45-9429-8100a7d982ce</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/BenjaminBarker/UC1/UC1T3</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b0c4776d-2fdc-4d80-ae04-5394365ab212</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/wsnames</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>b0c4776d-2fdc-4d80-ae04-5394365ab212</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value></value>
+         <variableId>d624b2b5-dd67-48bf-bcc7-1f58ad17e9af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>09f4446a-a629-446a-9213-4b2476e52986</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>07b38de0-4fc5-456b-ab06-757e4ca113b3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>38c7c3b4-f5b2-437e-806b-9d5846c1cd03</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>exportTabular</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28e9357e-f827-49d3-9746-fd9b92249f24</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ed015f84-d0f2-4c1f-91a5-dafd0ac0dda3</id>
+      <masked>false</masked>
+      <name>expectedPath</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bfa7f7d1-b7f4-4b00-8034-9b1a2cf0bbda</id>
+      <masked>false</masked>
+      <name>actualPath</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ff35bab3-5ead-4c2c-af61-2bdbb1e6eada</id>
+      <masked>false</masked>
+      <name>exportFileName</name>
+   </variable>
+</TestCaseEntity>

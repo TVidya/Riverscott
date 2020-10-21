@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UC1T3</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac76c8dc-434f-499c-87cd-3087e434fbf0</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d624b2b5-dd67-48bf-bcc7-1f58ad17e9af</id>
+      <masked>false</masked>
+      <name>workspacename</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>09f4446a-a629-446a-9213-4b2476e52986</id>
+      <masked>false</masked>
+      <name>attrname</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>07b38de0-4fc5-456b-ab06-757e4ca113b3</id>
+      <masked>false</masked>
+      <name>attrvals</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38c7c3b4-f5b2-437e-806b-9d5846c1cd03</id>
+      <masked>false</masked>
+      <name>eic</name>
+   </variable>
+</TestCaseEntity>

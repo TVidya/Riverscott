@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>DataDrivenTsuit</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>703bdd5f-2ec1-4518-bfa9-70bfc4d79b00</testSuiteGuid>
+   <testCaseLink>
+      <guid>27163e00-82b5-47f8-9184-14d911ef8695</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/LoginCID008</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d3dee84c-a1b2-4fa1-9740-4136cc5ec9d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/ClickonKanvasLogo</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>92eaeac1-7e25-426d-8cca-79a62082b0c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/FilterwithMulattrs</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>e7c38ccf-29a1-450c-be97-60557d2d180c</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/mulTCS</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>e7c38ccf-29a1-450c-be97-60557d2d180c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>attrName</value>
+         <variableId>87f3928b-1f58-49c5-a6f0-30915ed7e9bc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e7c38ccf-29a1-450c-be97-60557d2d180c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>attrVal</value>
+         <variableId>3a2b2541-5e7f-4391-a574-036db07905ed</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e7c38ccf-29a1-450c-be97-60557d2d180c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expectedItemCnt</value>
+         <variableId>3d2469a1-a88c-487d-92e1-2411ba72593f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e92866a6-d78a-4617-8088-9d7a5118e8d4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/LoadWorkspace</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>07a314cc-5961-43b7-b5aa-d220cdfc7650</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/mulTCS</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>07a314cc-5961-43b7-b5aa-d220cdfc7650</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>workspaceName</value>
+         <variableId>1565bc30-18bf-44c9-9bad-7753e544091f</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

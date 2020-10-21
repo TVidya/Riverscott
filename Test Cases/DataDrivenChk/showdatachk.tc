@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>showdatachk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad388d0a-32b1-4314-9d92-fcc4ec23c576</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>355c20fa-0644-4131-991d-52f4f44b3a81</id>
+      <masked>false</masked>
+      <name>showDataAttrName</name>
+   </variable>
+   <variable>
+      <defaultValue>';'</defaultValue>
+      <description></description>
+      <id>3159da1a-3087-45b7-8476-54e04b27b759</id>
+      <masked>false</masked>
+      <name>nSep</name>
+   </variable>
+</TestCaseEntity>

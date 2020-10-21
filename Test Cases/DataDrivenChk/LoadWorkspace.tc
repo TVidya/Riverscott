@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoadWorkspace</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0333c66a-629e-4016-a480-2a23f089e109</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1565bc30-18bf-44c9-9bad-7753e544091f</id>
+      <masked>false</masked>
+      <name>workspaceName</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>mulTestCases</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef4632e3-9ec7-44ff-8bb5-1430e17eec4c</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4cfe7cb2-6639-4151-806e-92a00b6f3ebe</id>
+      <masked>false</masked>
+      <name>attrName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>58be2072-2269-40bd-9df1-7339b9763248</id>
+      <masked>false</masked>
+      <name>attrVals</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4c07c798-2991-4670-8994-06a8deb7c445</id>
+      <masked>false</masked>
+      <name>expectedItemCnt</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d72df61c-a842-4b44-8032-c294f02f2003</id>
+      <masked>false</masked>
+      <name>workspaceName</name>
+   </variable>
+</TestCaseEntity>

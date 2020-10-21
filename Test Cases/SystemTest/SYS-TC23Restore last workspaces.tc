@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SYS-TC23Restore last workspaces</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2e9ee54-f8f2-4b17-b769-176090fa82ea</testCaseGuid>
+</TestCaseEntity>

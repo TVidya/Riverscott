@@ -1,0 +1,3 @@
+
+cd C:\Users\DELL\Desktop\Desktop\Katalon_Studio_Windows_64-7.6.0
+katalonc -noSplash -runMode=console -projectPath="C:\Users\DELL\Katalon Studio\Kanvas-R12\Kanvas-R12.prj" -retry=1 -retryStrategy=allExecutions -testSuitePath="Test Suites/R15-FinalTS/R15-DailyTest" -executionProfile="default" -browserType="Chrome" -apiKey="48643fdb-c686-42a7-98f1-26d044c88462" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true

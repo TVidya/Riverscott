@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FilterwithMulattrs</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6988460-64ad-43b3-a047-ab2d7c25dc49</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>87f3928b-1f58-49c5-a6f0-30915ed7e9bc</id>
+      <masked>false</masked>
+      <name>attrName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3a2b2541-5e7f-4391-a574-036db07905ed</id>
+      <masked>false</masked>
+      <name>attrVals</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3d2469a1-a88c-487d-92e1-2411ba72593f</id>
+      <masked>false</masked>
+      <name>expectedItemCnt</name>
+   </variable>
+</TestCaseEntity>

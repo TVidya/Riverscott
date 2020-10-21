@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>sorton8weeksCheck</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d760ac13-968a-4afe-8de8-c54bd968cca9</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7b2c6b07-ddef-42c0-b407-4d361143d20c</id>
+      <masked>false</masked>
+      <name>sortAttrName</name>
+   </variable>
+</TestCaseEntity>

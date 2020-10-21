@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>datadriven2</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>b3dd86cd-85b0-4e34-90f3-deaf33b14192</testSuiteGuid>
+   <testCaseLink>
+      <guid>61593d05-589a-4fd1-a47d-70c3a4646583</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/BenjaminBarker/UC1/UC1T3</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c3538d8a-bf85-4c75-b759-b114b0cfa23f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/BBdata</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d624b2b5-dd67-48bf-bcc7-1f58ad17e9af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c3538d8a-bf85-4c75-b759-b114b0cfa23f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>attrname</value>
+         <variableId>09f4446a-a629-446a-9213-4b2476e52986</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c3538d8a-bf85-4c75-b759-b114b0cfa23f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>attrval</value>
+         <variableId>07b38de0-4fc5-456b-ab06-757e4ca113b3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c3538d8a-bf85-4c75-b759-b114b0cfa23f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expecItemcnt</value>
+         <variableId>38c7c3b4-f5b2-437e-806b-9d5846c1cd03</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

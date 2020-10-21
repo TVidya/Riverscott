@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>multiTC</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>90956a04-7e22-4df8-94d4-274a2e101298</testSuiteGuid>
+   <testCaseLink>
+      <guid>d459dc46-ec17-455a-8f1c-381308a2722e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/LoginCID008</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1d619771-fc3a-4511-9322-5a3ed4c84ef7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/msrFlts</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3afe3f30-2961-4b52-821e-8e7b03bf3b4f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/endToendTD</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>3afe3f30-2961-4b52-821e-8e7b03bf3b4f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>msrNames</value>
+         <variableId>9c7c78ee-5502-4e4d-b1bf-4e66b6fb0b1f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3afe3f30-2961-4b52-821e-8e7b03bf3b4f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>minVal</value>
+         <variableId>b7ee9b41-bf9f-41d2-a3f8-708d52262f42</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3afe3f30-2961-4b52-821e-8e7b03bf3b4f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>maxVal</value>
+         <variableId>09e88b9b-b268-4d52-be36-545665294ba0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>679611aa-be22-45a7-9412-710408b276d2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>50c6c535-e9e0-4d0a-8790-294dba244210</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3afe3f30-2961-4b52-821e-8e7b03bf3b4f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expectedItemCnt</value>
+         <variableId>16388b8e-f32d-4e34-a963-94ab282910d0</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

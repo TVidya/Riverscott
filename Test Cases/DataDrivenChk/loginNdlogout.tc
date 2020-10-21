@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>loginNdlogout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a27abb2a-3481-4bad-a54a-2aa32e0e14d9</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8ff26508-9aab-437d-b178-4f1c9ab82b35</id>
+      <masked>false</masked>
+      <name>User</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d2a38ea4-6dea-478f-bcec-00f3fac369f3</id>
+      <masked>false</masked>
+      <name>Pwd</name>
+   </variable>
+</TestCaseEntity>

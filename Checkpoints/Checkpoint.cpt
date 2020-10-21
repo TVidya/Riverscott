@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkpoint>
+   <description></description>
+   <name>Checkpoint</name>
+   <tag></tag>
+   <excel-source-info>
+      <is-from-test-data>false</is-from-test-data>
+      <source-url>C:\Users\DELL\Desktop\katalonTD\onlycolor.xlsx</source-url>
+      <source-type>ExcelFile</source-type>
+      <sheet-name-or-separator>Sheet1</sheet-name-or-separator>
+      <is-using-relative-path>false</is-using-relative-path>
+      <is-using-first-row-as-header>true</is-using-first-row-as-header>
+   </excel-source-info>
+   <taken-date>2020-01-07T10:50:53.328</taken-date>
+   <column-names>
+      <column-name>attrNames</column-name>
+      <column-name>attrVals</column-name>
+      <column-name>hAttrNames</column-name>
+      <column-name>hAttrVals</column-name>
+      <column-name>TextTag</column-name>
+      <column-name>showDataAttrName</column-name>
+      <column-name>sortAttrName</column-name>
+      <column-name>sortStatus</column-name>
+      <column-name>statsAttrName</column-name>
+      <column-name>groupSortAttrName</column-name>
+      <column-name>groupByAttrName</column-name>
+      <column-name>workspaceName</column-name>
+      <column-name>expectedItemCnt</column-name>
+      <column-name>expectedToolTipInfo</column-name>
+      <column-name>Value Seperator</column-name>
+      <column-name>Name Seperator</column-name>
+      <column-name>limit</column-name>
+      <column-name>tempName</column-name>
+      <column-name>formatType</column-name>
+   </column-names>
+   <checkpoint-data><![CDATA[[
+  [
+    {
+      "value": "color",
+      "checked": false
+    },
+    {
+      "value": "GREEN,RED,SUEDE",
+      "checked": false
+    },
+    {
+      "value": "size",
+      "checked": false
+    },
+    {
+      "value": "35,36",
+      "checked": false
+    },
+    {
+      "value": "ktest1",
+      "checked": false
+    },
+    {
+      "value": "\u0027budget\u0027",
+      "checked": false
+    },
+    {
+      "value": "4wkros;8weeks check",
+      "checked": false
+    },
+    {
+      "value": "Descend,Ascend",
+      "checked": false
+    },
+    {
+      "value": "\u00274wkros\u0027",
+      "checked": false
+    },
+    {
+      "value": "\u00274wkros\u0027;\u0027budget\u0027",
+      "checked": false
+    },
+    {
+      "value": "chkAttrcolor;chkAttrsize",
+      "checked": false
+    },
+    {
+      "checked": false
+    },
+    {
+      "value": "9",
+      "checked": false
+    },
+    {
+      "checked": false
+    },
+    {
+      "value": ",",
+      "checked": false
+    },
+    {
+      "value": ";",
+      "checked": false
+    },
+    {
+      "value": "5",
+      "checked": false
+    },
+    {
+      "value": "PPTXtemp",
+      "checked": false
+    },
+    {
+      "value": "PNG",
+      "checked": false
+    }
+  ]
+]]]></checkpoint-data>
+</checkpoint>

@@ -1,0 +1,3 @@
+
+cd C:\Users\DELL\Desktop\Desktop\Katalon_Studio_Windows_64-7.6.0
+C:\Users\DELL\Desktop\Desktop\Katalon_Studio_Windows_64-7.6.0\katalon.exe -noSplash -runMode=console -projectPath="C:\Users\DELL\Katalon Studio\Kanvas-R12\Kanvas-R12.prj" -retry=1 -testSuitePath="Test Suites/R15-FinalTS/R15-DailyTest" -reportFolder="C:\Users\DELL\Katalon Studio\Kanvas-R12\ReportSch" -reportFileName="reportSCH" -sendMail="vidya@slicerpl.com"   -executionProfile="default" -browserType="Chrome"

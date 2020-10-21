@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>mulTestCases1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4040607a-600c-4eb4-82a6-5003fe7218fa</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cb4abcfd-7c5b-4e8e-a28e-1a6ff6bc4be1</id>
+      <masked>false</masked>
+      <name>workspaceName</name>
+   </variable>
+</TestCaseEntity>

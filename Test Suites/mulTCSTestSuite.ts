@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>mulTCSTestSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>17661167-8e8e-4acc-b63d-5c019664b66b</testSuiteGuid>
+   <testCaseLink>
+      <guid>91239053-c720-4921-a5ca-70a20a252230</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/mulTestCases</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>adf36676-1e4a-487a-8625-127c9ab2e1fd</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/mulTCS</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>adf36676-1e4a-487a-8625-127c9ab2e1fd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>attrName</value>
+         <variableId>4cfe7cb2-6639-4151-806e-92a00b6f3ebe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>adf36676-1e4a-487a-8625-127c9ab2e1fd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>attrVal</value>
+         <variableId>58be2072-2269-40bd-9df1-7339b9763248</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>adf36676-1e4a-487a-8625-127c9ab2e1fd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expectedItemCnt</value>
+         <variableId>4c07c798-2991-4670-8994-06a8deb7c445</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>adf36676-1e4a-487a-8625-127c9ab2e1fd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>workspaceName</value>
+         <variableId>d72df61c-a842-4b44-8032-c294f02f2003</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6f6a560a-bb23-4158-8c44-7256f196f8f9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DataDrivenChk/mulTestCases1</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>5c8abe98-fe93-47ee-89e2-a5477cd88bf1</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/mulTCSD2</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>5c8abe98-fe93-47ee-89e2-a5477cd88bf1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>workspaceName</value>
+         <variableId>cb4abcfd-7c5b-4e8e-a28e-1a6ff6bc4be1</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
