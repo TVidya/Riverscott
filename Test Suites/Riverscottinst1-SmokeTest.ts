@@ -4,7 +4,7 @@
    <name>Riverscottinst1-SmokeTest</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>ram@slicerpl.com;mugdha@slicerpl.com;ankeet@slicerpl.com;shiva@slicerpl.com;vidya@slicerpl.com;</mailRecipient>
+   <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>

@@ -590,9 +590,9 @@ public class AllstandardFunc {
 		}
 
 	}//resetTTag()
-	
 
-	
+
+
 
 	@Keyword
 	//Function updated on 13-08-20 with the attribute name accessor with the xpath
@@ -2312,10 +2312,14 @@ public class AllstandardFunc {
 	}//saveWS
 
 	@Keyword
+	//Updated on 21-10-2020
 	//Created on 07-08-20
 	//Updated on 10-08-20
+	//Updated on 13-08-20 keepsharesetting 'Yes' or 'No' options
+	//Updated on  09-09-20  with share options
+	//Updated on 15-09-20 with save workspace name warning msg already exists
 	//Save workspace and check if name already exists proceed
-	def SaveWorkspace(def wsName,String keepShareStngs){
+	def SaveWorkspace(String wsName,String keepShareStngs,String shareUserSave,String shareUserStatus,String nSep){
 		if(wsName != '')
 		{
 			//WebUI.click(findTestObject('Object Repository/Final objects/MySelection/MainButns/span_Welcome kat4cid008.com_ca'))
@@ -2328,19 +2332,19 @@ public class AllstandardFunc {
 			(new generalFunc.AllgenralFunc()).shortDelay()
 			KeywordUtil.logInfo("Clicked on save workspace option")
 			//Create object for setTextbox and setName
-
 			TestObject wsInputNM = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//input[@id="wrkSpcNm" and @placeholder="Workspace name"]')
 			(new generalFunc.AllgenralFunc()).clickUsingJS(wsInputNM,10)
 			WebUI.setText(wsInputNM, wsName)
 			KeywordUtil.logInfo("Entered Workspace Name")
+			//Create object for check box then click on it
+			TestObject keepSSinput = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//div[@id="sharesetting"]//input[@id="inheritChk"]')
+			TestObject keepSSlbl = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//div[@id="sharesetting"]//label[@class="lbl_cls chkTag_lbl"]')
 			//Check for share settings then click on else continue
 			if(keepShareStngs=="Yes")
 			{
-				//Create object for check box then click on it
-				TestObject keepSSinput = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//div[@id="sharesetting"]//input[@id="inheritChk"]')
-				TestObject keepSSlbl = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//div[@id="sharesetting"]//label[@class="lbl_cls chkTag_lbl"]')
+
 				//Verify input not checked then click it
-				if(WebUI.verifyElementNotChecked(keepSSinput, 10, FailureHandling.CONTINUE_ON_FAILURE))
+				if(WebUI.verifyElementNotChecked(keepSSinput, 10, FailureHandling.OPTIONAL))
 				{
 					(new generalFunc.AllgenralFunc()).clickUsingJS(keepSSlbl,10)
 					KeywordUtil.logInfo("Clicked on share settings option")
@@ -2350,9 +2354,65 @@ public class AllstandardFunc {
 					KeywordUtil.logInfo("Could not click on  Share settings option ")
 				}
 			}
+			else if(keepShareStngs=="No")
+			{
+				//Verify input  checked then click it
+				if(WebUI.verifyElementChecked(keepSSinput, 10, FailureHandling.OPTIONAL))
+				{
+					(new generalFunc.AllgenralFunc()).clickUsingJS(keepSSlbl,10)
+					KeywordUtil.logInfo("Unchecked Keep share settings")
+				}
+				else
+				{
+					KeywordUtil.logInfo("Keep Share settings is already uncheked ")
+				}
+			}
 			else
 			{
 				KeywordUtil.logInfo("Keep share settings info is blank")
+			}
+
+			//Share workspace with users based on the given inputs
+			if(shareUserSave!="")
+			{
+				def MshareUserSave = shareUserSave.split(nSep)
+				def MshareUserStatus = shareUserStatus.split(nSep)
+				int lenShareUserSave = MshareUserSave.size()
+				for(def index: (0..lenShareUserSave-1))
+				{
+					String SSUserNM = MshareUserSave[index].trim()
+					String SSUserSts = MshareUserStatus[index].trim()
+					KeywordUtil.logInfo("Share Workspace to User.."+SSUserNM+"... with.."+SSUserSts+"....option")
+					//Verify the status and click on share status
+					if(SSUserSts=="Edit")
+					{
+						//Make an object for Edit button and click on it
+						TestObject editRadio = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//label[@class="radio shrusrRadio"]//input[@id="radioR" and @class="vi-usereditcheck" and @data-value="'+SSUserNM+'"]')
+						WebUI.scrollToElement(editRadio, 10)
+						(new generalFunc.AllgenralFunc()).clickUsingJS(editRadio,10)
+						KeywordUtil.logInfo("Clicked on Edit Save workspace to the user.."+SSUserNM)
+					}
+					else if(SSUserSts=="View")
+					{
+						//Make an object for View button and click on it
+						TestObject viewRadio = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//label[@class="radio shrusrRadio"]//input[@id="radioR" and @class="vi-userviewcheck" and @data-value="'+SSUserNM+'"]')
+						WebUI.scrollToElement(viewRadio, 10)
+						(new generalFunc.AllgenralFunc()).clickUsingJS(viewRadio,10)
+						KeywordUtil.logInfo("Clicked on View Save workspace to the user.."+SSUserNM)
+					}
+					else
+					{
+						//Make an object for Deny button and click on it
+						TestObject denyRadio = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//label[@class="radio shrusrRadio"]//input[@id="radioR" and @class="vi-userviewcheck" and @data-value="'+SSUserNM+'"]')
+						WebUI.scrollToElement(denyRadio, 10)
+						(new generalFunc.AllgenralFunc()).clickUsingJS(denyRadio,10)
+						KeywordUtil.logInfo("Clicked on Deny Save workspace to the user.."+SSUserNM)
+
+					}
+				}
+			}else
+			{
+				KeywordUtil.logInfo("Share information is blank while save workspace..")
 			}
 
 			//Create object for Save button and then click
@@ -2360,6 +2420,24 @@ public class AllstandardFunc {
 			(new generalFunc.AllgenralFunc()).clickUsingJS(saveWSbtn,10)
 			KeywordUtil.logInfo("Clicked on Save Workspace")
 			(new generalFunc.AllgenralFunc()).shortDelay()
+
+			//Validate for warning message/s
+			String warnMsg = "You do not have Edit Permission on"+ wsName+". Please enter a new name."
+			if(WebUI.verifyTextPresent(warnMsg, false, FailureHandling.OPTIONAL)==true)
+			{
+				KeywordUtil.logInfo("Workspace Name.. "+wsName+"...Already exists..Click on Cancel Workspace")
+				TestObject cancelSave = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//button[@id="savework" ]/following-sibling::button[@class="btn grayBtn"]')
+				(new generalFunc.AllgenralFunc()).clickUsingJS(cancelSave,10)
+				KeywordUtil.logInfo("Clicked on Cancel Save workspace")
+				KeywordUtil.markFailed("Clicked on Cancel Save workspace")
+			}
+			else
+			{
+				KeywordUtil.logInfo("Workspace name error message not displayed")
+			}
+
+
+
 			//Create object for 'OK' button and then click
 			//button[@class="confirm"]
 			TestObject okBtn = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '','', '//button[@class="confirm"]')

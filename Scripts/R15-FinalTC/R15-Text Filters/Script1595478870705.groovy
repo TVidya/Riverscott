@@ -102,8 +102,10 @@ CustomKeywords.'standardFunc.AllstandardFunc.CompareTooltipInfo'(expectedToolTip
 CustomKeywords.'layoutFunc.AlllayoutFunc.loadTemplate'(tempName)
 //Export template
 CustomKeywords.'layoutFunc.AlllayoutFunc.exportTemplateL'(tplExportFnm, tplExportFormat)
+CustomKeywords.'generalFunc.AllgenralFunc.longDelay'()
 
-//CustomKeywords.'generalFunc.AllgenralFunc.longDelay'()
+//Download from dashboard
+CustomKeywords.'dashboardFunc.AlldashboardFunc.exportFileFromDashboard'(exportFileName)
 
 
 

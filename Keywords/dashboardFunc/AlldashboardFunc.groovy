@@ -97,9 +97,10 @@ public class AlldashboardFunc {
 	}//downloadExportFileTR15()
 
 	@Keyword
-	//Tabular export file downloads from dashboard->Export status report
+	//Updated on 21-10-20
+	//export file downloads from dashboard->Export status report
 	//Requires one argument as a export file nmae
-	def exportTabularFromDashboard(String exportFileName)
+	def exportFileFromDashboard(String exportFileName)
 	{
 		if(exportFileName != '')
 		{
@@ -110,9 +111,22 @@ public class AlldashboardFunc {
 			//Make object for dashboard and click
 			TestObject dashboard = (new generalFunc.AllgenralFunc()).makeTestObject('i', '', 'dashboard_icon', '', '','' ,'')
 			WebUI.click(dashboard)
-			(new generalFunc.AllgenralFunc()).shortDelay()
 			//alerts handling
 			(new generalFunc.AllgenralFunc()).alertHandling()
+			(new generalFunc.AllgenralFunc()).shortDelay()
+			//chk for License expiry
+			TestObject LicenseOK = (new generalFunc.AllgenralFunc()).makeTestObject('', '', '', '', '', '','//button[@class="confirm"]')
+			if(WebUI.verifyTextPresent("Information!",false,FailureHandling.OPTIONAL))
+			{
+				(new generalFunc.AllgenralFunc()).clickUsingJS(LicenseOK,10)
+				KeywordUtil.markPassed("Clicked on License button")
+			}
+			else
+			{
+				KeywordUtil.logInfo("License Expiry info message not displayed")
+				KeywordUtil.markPassed("License Expiry info message not displayed")
+			}
+			
 
 			//Click on export status report expansion
 			TestObject expandExportStatus = (new generalFunc.AllgenralFunc()).makeTestObject('i', '', '', 'maximize-export-report', '','' ,'')
@@ -144,7 +158,7 @@ public class AlldashboardFunc {
 			KeywordUtil.logInfo("Exportfile name  info is blank")
 		}
 
-	}//exportTabularFromDashboard
+	}//exportFileFromDashboard
 
 
 }
